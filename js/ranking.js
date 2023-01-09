@@ -71,7 +71,9 @@ async function getData()
             //     row.append(cell);
             // })
             const tbody = document.createElement('tbody')
-            tbody.classList.add('scrolling')
+            if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
+                tbody.classList.add('scrolling')
+            }
             output.append(tbody)
             output.append(tbody)
             data.table.rows.forEach((main)=>
