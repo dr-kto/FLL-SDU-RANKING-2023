@@ -145,10 +145,10 @@ th{
         transform: translateY(0%);
     }
     49% {
-        transform: translateY(-73%);
+        transform: translateY(-87%);
     }
     51% {
-        transform: translateY(-73%);
+        transform: translateY(-87%);
     }
     100% {
         transform: translateY(0%);
@@ -159,7 +159,7 @@ thead {
     z-index: 999;
 }
 .scrolling {
-    animation: scroll 35s alternate;
+    animation: scroll 60s linear;
 
 }
 .go_left {

@@ -47,7 +47,7 @@ async function getData()
     try {
         const base = 'https://docs.google.com/spreadsheets/d/1Z5sTrMvQPhDwGg50ALi-v9hXXTXL9Km-h7eI_vf1sRM'+'/gviz/tq?'+'tqx=out:txt&sheet='+'Ranking'
         const output = document.querySelector('.output')
-        const query = encodeURIComponent('Select A,B,C LIMIT 22 ')
+        const query = encodeURIComponent('Select A,B,C LIMIT 46 ')
         const url = base + '&tq=' + query;
         let data;
         const response = await fetchWithTimeout(url,{
@@ -90,7 +90,7 @@ async function getData()
                 })
             })
             // output.style.transform = "translateY(-100%)";
-            await sleep(35000);
+            await sleep(65000);
 
             getData();
 
